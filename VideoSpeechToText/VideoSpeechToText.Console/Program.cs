@@ -18,8 +18,8 @@ ISpeechTranscriber mySpeechRecognizer = new AzureSpeechTranscriber(
     videoToWavConverter
     );
 
-string text = await mySpeechRecognizer.TranscribeAsync("C:\\Test", "news.mp4"); // 3m23s BBC news broadcast
-//string text = await mySpeechRecognizer.TranscribeAsync("C:\\Test", "harvard.wav"); // 18s clear speech
+//string text = await mySpeechRecognizer.TranscribeAsync("C:\\Test", "news.mp4"); // 3m23s BBC news broadcast
+string text = await mySpeechRecognizer.TranscribeAsync("C:\\Test", "harvard.wav"); // 18s clear speech
 //string text = await mySpeechRecognizer.TranscribeAsync("C:\\Test", "jackhammer.wav"); // 3s with noise in background
 Console.WriteLine(text);
 
